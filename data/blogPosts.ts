@@ -23,9 +23,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: "why-convert-office-to-markdown",
-    title: "WordやExcelをMarkdownに変換する5つのメリット",
+    title: "WordやExcelをMarkdownに変換する6つのメリット",
     excerpt:
-      "Officeファイルのままでは扱いにくい場面は意外と多いもの。Markdownに変換することで得られる具体的なメリットを解説します。",
+      "Officeファイルのままでは扱いにくい場面は意外と多いもの。AIとの相性のよさを含め、Markdownに変換することで得られる具体的なメリットを解説します。",
     date: "2026-05-12",
     category: "活用事例",
     readTime: "7分",
