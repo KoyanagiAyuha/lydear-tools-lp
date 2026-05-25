@@ -17,6 +17,8 @@ import {
   Sparkles,
 } from 'lucide-react';
 
+const TOOL_URL = 'https://shiyosho.lydear-tools.com/ja';
+
 const CONTACT_FORM_URL =
   'https://docs.google.com/forms/d/e/1FAIpQLScJzskywC5sYRDro_qwcDbi-4wLLClJ2OcdeeUeQOWjyy9FfA/viewform';
 
@@ -68,24 +70,6 @@ const guideSteps = [
   },
 ];
 
-const roadmap = [
-  {
-    name: 'Office to Markdown 変換ツール',
-    note: 'Word・Excel・PowerPoint を Markdown に変換',
-    status: '準備中',
-  },
-  {
-    name: 'ファイル変換ツール',
-    note: '画像・ドキュメントなどの形式変換',
-    status: '構想中',
-  },
-  {
-    name: 'ドキュメント整形ツール',
-    note: 'テキストやデータの整形・クリーンアップ',
-    status: '構想中',
-  },
-];
-
 export default function Home() {
   return (
     <div>
@@ -100,15 +84,15 @@ export default function Home() {
           className="relative z-10 text-center px-6 max-w-5xl mx-auto"
         >
           <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium text-blue-700 bg-blue-100 rounded-full">
-            毎日の作業を、もっと軽やかに
+            AI時代のドキュメント作業を、もっと軽やかに
           </span>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-gray-900 mb-6">
             Lydear Tools
           </h1>
           <p className="text-lg md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-            ファイル変換、ドキュメント整形、画像処理——
+            Office を Markdown に変換し、AI で扱いやすく——
             <br className="hidden sm:block" />
-            ブラウザだけで完結する、シンプルなWebツールを集めました。
+            ブラウザだけで完結する、シンプルなWebツールを公開しています。
           </p>
 
           <motion.div
@@ -118,20 +102,22 @@ export default function Home() {
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <a
-              href="#tools"
+              href={TOOL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-gray-900 rounded-full hover:bg-gray-800 transition-colors group"
             >
-              ツールを見る
+              ツールを使ってみる
               <ArrowRight
                 className="ml-2 group-hover:translate-x-1 transition-transform"
                 size={20}
               />
             </a>
             <a
-              href="#guide"
+              href="#tools"
               className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-gray-900 bg-white border border-gray-300 rounded-full hover:bg-gray-50 transition-colors"
             >
-              使い方を見る
+              ツールの詳細を見る
             </a>
           </motion.div>
         </motion.div>
@@ -295,55 +281,6 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Roadmap Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-3xl mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-3">
-              Roadmap
-            </h2>
-            <p className="text-lg text-gray-600">
-              これから追加予定のツール
-            </p>
-          </motion.div>
-
-          <div className="space-y-4">
-            {roadmap.map((item, index) => (
-              <motion.div
-                key={item.name}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.08 }}
-                className="flex items-center justify-between gap-4 bg-gray-50 rounded-xl px-6 py-5 border border-gray-100"
-              >
-                <div>
-                  <p className="font-medium text-gray-900">{item.name}</p>
-                  <p className="text-sm text-gray-500 mt-0.5">{item.note}</p>
-                </div>
-                <span className="shrink-0 inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-gray-200 text-gray-600">
-                  {item.status}
-                </span>
-              </motion.div>
-            ))}
-          </div>
-
-          <p className="text-center text-sm text-gray-500 mt-8">
-            「こんなツールが欲しい」というご要望は、
-            <a href="#contact" className="text-blue-600 hover:underline">
-              お問い合わせ
-            </a>
-            からお気軽にお寄せください。
-          </p>
         </div>
       </section>
 

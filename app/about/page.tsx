@@ -55,12 +55,22 @@ export default function About() {
           </h2>
           <p className="text-gray-600 leading-relaxed mb-4">
             Lydear Tools では、用途ごとに独立したWebツールを公開しています。
-            現在は次のツールを準備しています。
+            現在公開中の主なツールは次のとおりです。
           </p>
           <ul className="list-disc pl-6 text-gray-600 space-y-2">
             <li>
-              <strong>Office to Markdown 変換ツール</strong>：
-              Word・Excel・PowerPoint を Markdown 形式に変換するツール（準備中）。
+              <strong>
+                <a
+                  href="https://shiyosho.lydear-tools.com/ja"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  shiyosho
+                </a>
+              </strong>
+              ：Word・Excel・PowerPoint・CSV を、AI / LLM で扱いやすい Markdown
+              に変換するツール。すべての処理がブラウザ内で完結します。
             </li>
           </ul>
           <p className="text-gray-600 leading-relaxed mt-4">

@@ -47,7 +47,7 @@ Markdownは見出しや箇条書きといった構造が記号で明確に表現
 
 これらのメリットを得るために、わざわざ手作業でMarkdownに書き直す必要はありません。既存のOfficeファイルをそのまま読み込み、Markdownに変換するツールを使えば、数クリックで済みます。
 
-Lydear Toolsでは、Word・Excel・PowerPointをMarkdownへ変換するツールを準備中です。見出しや表、箇条書きといった構造をできる限り保ったまま変換するため、変換後の手直しも最小限で済みます。
+Lydear Toolsでは、Word・Excel・PowerPoint・CSV を Markdown へ変換するツール「[shiyosho](https://shiyosho.lydear-tools.com/ja)」を公開しています。見出しや表、箇条書きといった構造をできる限り保ったまま変換するため、変換後の手直しも最小限で済みます。すべての処理はブラウザ内で完結し、ファイルがサーバーに送信されることはありません。
 
 ## まとめ
 

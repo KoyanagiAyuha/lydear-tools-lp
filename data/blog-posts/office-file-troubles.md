@@ -30,7 +30,7 @@ Markdownはただのテキストなので、特別なソフトがなくても中
 
 一方で、「共有が多い」「長く参照する」「他のツールに転記する」——こうした文書は、Markdownにしておくメリットが大きいといえます。まずはそうした文書から、変換ツールを使ってMarkdown化してみるのがおすすめです。
 
-Lydear Toolsでは、Word・Excel・PowerPointをMarkdownに変換するツールを準備しています。手元のファイルを読み込むだけで、見出しや表の構造を保ったまま変換できます。
+Lydear Toolsでは、Word・Excel・PowerPoint・CSV を Markdown に変換できるツール「[shiyosho](https://shiyosho.lydear-tools.com/ja)」を公開しています。手元のファイルを読み込むだけで、見出しや表の構造を保ったまま変換できます。
 
 ## まとめ
 

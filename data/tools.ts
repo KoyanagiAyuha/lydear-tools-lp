@@ -2,22 +2,22 @@ import { Tool } from "@/types/tool";
 
 export const tools: Tool[] = [
   {
-    id: "office-to-markdown",
-    title: "Office to Markdown 変換ツール",
+    id: "shiyosho",
+    title: "shiyosho（Office to Markdown 変換ツール）",
     description:
-      "Word・Excel・PowerPoint などの Office ファイルを、きれいな Markdown に変換します。",
+      "Word・Excel・PowerPoint・CSV を、AI/LLM で扱いやすい Markdown に瞬時に変換します。",
     longDescription:
-      "Word（.docx）・Excel（.xlsx）・PowerPoint（.pptx）といった Office 形式のドキュメントを、ブラウザ上で Markdown 形式に変換するツールです。見出し・箇条書き・表・リンクなどの構造をできる限り保持したまま変換するため、ブログ記事や技術ドキュメント、ナレッジベースへの転記がスムーズになります。ファイルはブラウザ内で処理されるため、サーバーにアップロードせずに利用できる設計を予定しています。",
-    url: "https://office-to-md.lydear-tools.com",
+      "shiyosho は、Office 形式のドキュメント（Word / Excel / PowerPoint / CSV）を、ChatGPT や Claude などの LLM、RAG パイプラインで読み込みやすい Markdown へ変換するツールです。見出し・表・リストといった構造を保ったまま変換されるため、変換後の手直しを最小限に抑えられます。すべての処理はブラウザ内で完結し、ファイルがサーバーに送信されることはありません。",
+    url: "https://shiyosho.lydear-tools.com/ja",
     icon: "📝",
     color: "from-blue-500 to-indigo-500",
     features: [
-      "Word / Excel / PowerPoint に対応",
-      "見出し・表・リスト構造を保持",
-      "インストール不要・ブラウザだけで完結",
-      "変換結果をワンクリックでコピー",
+      "Word（.docx）・Excel（.xlsx / .xls / .csv）・PowerPoint（.pptx）に対応",
+      "見出し・表・リストの構造を保持して変換",
+      "ブラウザ内処理でサーバーへ送信せず、待ち時間もなし",
+      "LLM・RAG での読み込みに最適化された Markdown を出力",
     ],
-    status: "coming-soon",
-    releaseDate: "2026年内 公開予定",
+    status: "released",
+    releaseDate: "2026年5月 公開",
   },
 ];
