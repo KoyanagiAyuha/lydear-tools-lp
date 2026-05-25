@@ -131,6 +131,46 @@ export default async function BlogPostPage({
                   {children}
                 </blockquote>
               ),
+              a: ({ href, children }) => (
+                <a
+                  href={href}
+                  target={href?.startsWith('http') ? '_blank' : undefined}
+                  rel={
+                    href?.startsWith('http')
+                      ? 'noopener noreferrer'
+                      : undefined
+                  }
+                  className="text-blue-600 hover:text-blue-700 underline"
+                >
+                  {children}
+                </a>
+              ),
+              img: ({ src, alt }) => (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={typeof src === 'string' ? src : undefined}
+                  alt={alt ?? ''}
+                  className="rounded-lg border border-gray-200 my-6 w-full h-auto"
+                />
+              ),
+              code: ({ children, className }) => {
+                const isBlock = className?.includes('language-');
+                if (isBlock) {
+                  return (
+                    <code className={className}>{children}</code>
+                  );
+                }
+                return (
+                  <code className="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm">
+                    {children}
+                  </code>
+                );
+              },
+              pre: ({ children }) => (
+                <pre className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto my-4 text-sm leading-relaxed">
+                  {children}
+                </pre>
+              ),
             }}
           >
             {content}

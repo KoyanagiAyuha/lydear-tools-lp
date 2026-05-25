@@ -11,6 +11,39 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "shiyosho-usage-guide",
+    title: "shiyosho の使い方ガイド｜Office を AI 用 Markdown に変換する",
+    excerpt:
+      "Word・Excel・PowerPoint を Markdown に変換できるツール「shiyosho」の使い方を、画面と一緒に解説します。AI で扱いやすい資料の整え方も紹介。",
+    date: "2026-05-26",
+    category: "使い方ガイド",
+    readTime: "7分",
+    author: "Lydear Tools 編集部",
+    contentFile: "shiyosho-usage-guide.md",
+  },
+  {
+    id: "ai-with-office-documents",
+    title: "ChatGPT・Claude に Office 資料を読み込ませて活用する方法",
+    excerpt:
+      "Word や Excel をそのまま AI に渡すとうまく読み取ってくれない——その理由と、Markdown を間に挟む実践的なワークフローを紹介します。",
+    date: "2026-05-24",
+    category: "AI活用",
+    readTime: "8分",
+    author: "Lydear Tools 編集部",
+    contentFile: "ai-with-office-documents.md",
+  },
+  {
+    id: "excel-to-ai-with-markdown",
+    title: "Excel の表を AI で活用するには？Markdown 変換が効くシーン",
+    excerpt:
+      "Excel の表を AI にうまく扱ってもらうには、Markdown のテーブル形式が効果的です。具体的なシーンと渡し方のコツをまとめました。",
+    date: "2026-05-22",
+    category: "AI活用",
+    readTime: "7分",
+    author: "Lydear Tools 編集部",
+    contentFile: "excel-to-ai-with-markdown.md",
+  },
+  {
     id: "what-is-markdown",
     title: "Markdownとは？はじめての人向けに基本記法をやさしく解説",
     excerpt:
